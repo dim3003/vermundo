@@ -1,0 +1,6 @@
+# Ignore node modules files
+node_modules/
+# Remove anyrhing vs
+.vs/
+#Ignore swap files
+*.swp
