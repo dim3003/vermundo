@@ -1,0 +1,21 @@
+.last-article-title-box {
+	position: relative;
+	width: 220px;
+	height: 78px;
+	background-color: #F6D85F;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	font-family: 'Suez One', serif;
+	color: black;
+	top: -57px;
+	left: 50%;  
+	transform: translate(-50%);
+}
+
+.last-article-title {
+	font-size: 20px;
+	position: absolute;
+	top: 39px; 
+	width: 100%;
+	text-align: center; 
+}
