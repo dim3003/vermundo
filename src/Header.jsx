@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css'; // Link to the CSS file for styling
+import './Header.css'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 

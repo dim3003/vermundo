@@ -5,9 +5,15 @@ body {
 	padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
 	font-weight: 700; 
 	font-size: 1.6em; 
+}
+
+h3 {
+	font-size: 19px;
+	font-family: 'Suez One', sans-serif;
+	font-weight: bold;
 }
 
 p, li, button, input, textarea {

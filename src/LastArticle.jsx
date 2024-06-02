@@ -1,17 +1,23 @@
-
 import React from 'react';
-import './LastArticle.css'; // Link to the CSS file for styling
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import './LastArticle.css'; 
+import ArticleCard from './ArticleCard';
 
 const LastArticle = () => {
 	  return (
-		      <div className="last-article-title-box">
-			  <div class="last-article-title">
-				Derniers Articles
-		  	</div>
-		      </div>
-		    );
+		  <>
+			<div className="last-article-title-box">
+				<div className="last-article-title">
+					Derniers Articles
+				</div>
+			</div>
+			<ArticleCard 
+				title="Titre" 
+				text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae convallis ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae convallis ex." 
+				date="Date de parution"
+				imageUrl="halongBay.jpeg"
+			/>
+		  </>
+	    );
 };
 
 export default LastArticle
