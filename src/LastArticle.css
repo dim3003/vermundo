@@ -7,7 +7,7 @@
 	border-bottom-right-radius: 20px;
 	font-family: 'Suez One', serif;
 	color: black;
-	top: -57px;
+	margin-top: -57px;
 	left: 50%;  
 	transform: translate(-50%);
 }

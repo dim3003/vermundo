@@ -6,7 +6,7 @@ const ArticleCard = ({ title, text, date, imageUrl }) => {
 		            <div className="article-card">
 		                <img src={`/images/${imageUrl}`} alt="Scenic view" className="article-image" />
 		                <div className="article-content">
-		                    <h3>{title}</h3>
+		                    <div className="article-title">{title}</div>
 		                    <p className="article-text">{text}</p>
 		                    <div className="article-date">{date}</div>
 		                </div>

@@ -16,6 +16,18 @@ const LastArticle = () => {
 				date="Date de parution"
 				imageUrl="halongBay.jpeg"
 			/>
+			<ArticleCard 
+				title="Titre" 
+				text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae convallis ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae convallis ex." 
+				date="Date de parution"
+				imageUrl="halongBay.jpeg"
+			/>
+			<ArticleCard 
+				title="Titre" 
+				text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae convallis ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae convallis ex." 
+				date="Date de parution"
+				imageUrl="halongBay.jpeg"
+			/>
 		  </>
 	    );
 };

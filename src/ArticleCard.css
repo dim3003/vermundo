@@ -1,24 +1,29 @@
 .article-card {
 	display: flex;
 	width: 300px;
-	margin: 0 auto;
+	margin: 25px auto;
 	overflow: hidden;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+	box-shadow: 0px 4px 0px rgba(0,0,0,0.2);
 }
 
 .article-content {
-	padding: 20px;
+	padding: 10px 20px;
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
+.article-title {
+	font-size: 19px;
+	font-family: 'Suez One', sans-serif;
+}
 
 .article-text {
 	font-size: 10px;
+	text-align: justify;
 }
 
 .article-date {

@@ -4,3 +4,5 @@ node_modules/
 .vs/
 #Ignore swap files
 *.swp
+#Ignore vim backup files 
+*~
