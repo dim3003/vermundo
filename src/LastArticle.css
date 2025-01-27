@@ -20,6 +20,10 @@
 	text-align: center;
 }
 
+.last-article-container {
+	margin-top: 50px;
+}
+
 @media (min-width: 1024px) {
 	.last-article-title-box {
 		position: relative;
@@ -41,5 +45,10 @@
 		top: 39px;
 		width: 100%;
 		text-align: center;
+	}
+
+	.last-article-container {
+		display: flex;
+		justify-content: center;
 	}
 }

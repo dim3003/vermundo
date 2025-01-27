@@ -5,7 +5,7 @@
 	overflow: hidden;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	box-shadow: 0px 4px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 .article-content {
@@ -18,7 +18,7 @@
 
 .article-title {
 	font-size: 19px;
-	font-family: 'Suez One', sans-serif;
+	font-family: "Suez One", sans-serif;
 }
 
 .article-text {
@@ -35,4 +35,19 @@
 .article-image {
 	width: 130px;
 	object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+	.article-card {
+		margin: 25px 50px;
+		display: flex;
+		flex-direction: column;
+		width: 250px;
+		height: 300px;
+		border-radius: 0;
+	}
+
+	.article-image {
+		width: 300px;
+	}
 }
