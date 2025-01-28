@@ -10,7 +10,7 @@
 	font-size: 18px;
 }
 
-.about-title {
+.about-title-mobile {
 	height: 39px;
 	width: 124px;
 	font-family: "Suez One", sans-serif;
@@ -18,15 +18,24 @@
 	margin: 10px 0;
 }
 
-.profile-image {
-	width: 218px;
-	height: 218px;
-	border-radius: 50%;
-	object-fit: cover;
+.about-title-desktop {
+	display: none;
+}
+
+.about-image-block {
 	margin: 20px auto;
 }
 
+.about-image {
+	object-fit: cover;
+	width: 218px;
+	height: 218px;
+	border-radius: 50%;
+}
+
 .instagram-section {
+	text-align: center;
+	font-size: 2em;
 	font-family: "Suez One", sans-serif;
 	margin: 3em auto 1em;
 }
@@ -50,4 +59,57 @@
 	width: 25px;
 	height: 25px;
 	object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+	.about-container {
+		position: relative;
+		height: 600px;
+	}
+
+	.about-description {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: #ffe27c;
+		z-index: 1;
+		padding: 2em 4em;
+		width: 450px;
+		height: 400px;
+		position: absolute;
+		top: 15%;
+		right: 40%;
+		transform: translateX(50%);
+	}
+
+	.about-image-block {
+		z-index: -1;
+		position: absolute;
+		top: 0;
+		right: 70%;
+		transform: translateX(50%);
+	}
+
+	.about-image {
+		border-radius: 0;
+		width: 540px;
+		height: 600px;
+	}
+
+	.about-title-mobile {
+		display: none;
+	}
+
+	.about-title-desktop {
+		display: block;
+		height: 39px;
+		width: 124px;
+		font-family: "Suez One", sans-serif;
+		font-size: 1.5rem;
+		margin: 10px 0;
+	}
+
+	.instagram-section {
+		margin: 5em auto;
+	}
 }
