@@ -1,0 +1,54 @@
+.last-article-title-box {
+	position: relative;
+	width: 220px;
+	height: 78px;
+	background-color: #f6d85f;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	font-family: "Suez One", serif;
+	color: black;
+	margin-top: -57px;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.last-article-title {
+	font-size: 20px;
+	position: absolute;
+	top: 39px;
+	width: 100%;
+	text-align: center;
+}
+
+.last-article-container {
+	margin-top: 50px;
+}
+
+@media (min-width: 1024px) {
+	.last-article-title-box {
+		position: relative;
+		width: 300px;
+		height: 102px;
+		background-color: #f6d85f;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		font-family: "Suez One", serif;
+		color: black;
+		margin-top: -27px;
+		left: 50%;
+		transform: translate(-50%);
+	}
+
+	.last-article-title {
+		font-size: 25px;
+		position: absolute;
+		top: 39px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.last-article-container {
+		display: flex;
+		justify-content: center;
+	}
+}
