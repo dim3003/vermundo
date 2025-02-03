@@ -1,5 +1,4 @@
-import React from "react";
-import "./LastArticle.css";
+import "../style/LastArticle.css";
 import ArticleCard from "./ArticleCard";
 
 const LastArticle = () => {
