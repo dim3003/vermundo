@@ -1,6 +1,5 @@
 import HomeHeader from "../components/HomeHeader";
 import LastArticle from "../components/LastArticle";
-import About from "../components/About";
 import Footer from "../components/Footer";
 
 const HomePage = () => {
@@ -8,7 +7,6 @@ const HomePage = () => {
 		<div>
 			<HomeHeader />
 			<LastArticle />
-			<About />
 			<Footer />
 		</div>
 	);
