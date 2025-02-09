@@ -3,3 +3,10 @@
 	text-align:justify;
 }
 
+@media (min-width: 1024px){
+	.article-text-container{
+		font-size: 1.2em;
+		margin: 0 20em 3em;
+	}
+}
+

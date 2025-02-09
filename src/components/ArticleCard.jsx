@@ -3,20 +3,22 @@ import "../style/ArticleCard.css";
 
 const ArticleCard = ({ title, text, date, imageUrl }) => {
 	return (
-		<div className="article-card">
-			<img
-				src={`/images/${imageUrl}`}
-				alt="Scenic view"
-				className="article-card-image"
-			/>
-			<div className="article-card-content">
-				<div className="article-card-title">
-					{title}
+		<a href="article" className="article-card-link">
+			<div className="article-card">
+				<img
+					src={`/images/${imageUrl}`}
+					alt="Scenic view"
+					className="article-card-image"
+				/>
+				<div className="article-card-content">
+					<div className="article-card-title">
+						{title}
+					</div>
+					<p className="article-card-text">{text}</p>
+					<div className="article-card-date">{date}</div>
 				</div>
-				<p className="article-card-text">{text}</p>
-				<div className="article-card-date">{date}</div>
 			</div>
-		</div>
+		</a>
 	);
 };
 

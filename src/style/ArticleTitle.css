@@ -12,3 +12,14 @@
 	margin: 0;
 	padding: 0;
 }
+
+
+@media (min-width: 1024px){
+	.article-title{
+		font-size: 2em;
+	}
+
+	.article-subtitle{
+		font-size: 1.4em;
+	}
+}

@@ -11,6 +11,12 @@ const subtitle = "un itinéraire tout en douceur";
 const sectionTitle = "Luang Prabang, jours 1-4";
 const imageUrl = "halongBay.jpeg";
 
+const paragraphs = [
+	"Si vous lisez cet article, il est fort probable que vous prévoyez de partir prochainement au Laos ou que vous y soyez déjà. Super! C’est un pays fabuleux qui fait partie de mes top 3 lors d’un voyage en Asie du Sud-Est. Et ce pour de multiples raisons, que je détaillerai au fil de cet article.",
+	"Mais avant toutes choses, il s’agit ici de vous présenter les trois endroits qui sont selon moi incontournables lors d’un voyage au Nord du Laos, plus de vous avertir sur quelques lieux qui ne valent pas le détour.",
+	"Avant de commencer, voici quelques informations pratiques importantes avant de prévoir un voyage au Laos:"
+];
+
 const bulletList = [
 	{
 		title: "Visa",
@@ -40,13 +46,13 @@ const ArticlePage = () => {
 		<>
 			<ArticleHeader />
 			<ArticleTitle title={title} subtitle={subtitle}/>
-			<ArticleText />
+			<ArticleText paragraphs={paragraphs}/>
 			<ArticleSectionTitle sectionTitle={sectionTitle} />
-			<ArticleText />
+			<ArticleText paragraphs={paragraphs}/>
 			<ArticleBulletList items={bulletList} />
-			<ArticleText />
+			<ArticleText paragraphs={paragraphs}/>
 			<ArticleImage imageUrl={imageUrl} />
-			<ArticleText />
+			<ArticleText paragraphs={paragraphs}/>
 			<Footer />
 		</>
 	);

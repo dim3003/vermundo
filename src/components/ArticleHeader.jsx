@@ -4,7 +4,9 @@ const ArticleHeader = () => {
 	return (
 		<div className="article-header">
 			<div className="top-bar">
-				<div className="brand">VERMUNDO</div>
+				<a href="/">
+					<div className="brand">VERMUNDO</div>
+				</a>
 			</div>
 		</div>
 	);
