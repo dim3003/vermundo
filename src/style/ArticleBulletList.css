@@ -1,0 +1,18 @@
+.article-bullet-list{
+	display: flex;
+	width: 300px;
+	margin: 25px auto;
+	overflow: auto;
+	border-radius: 20px;
+	box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.article-bullet-list-content{
+	padding:0.5em 3em;
+}
+
+.article-bullet-item{
+	margin: 1em 0;}
+
+@media (min-width: 1024px) {
+}

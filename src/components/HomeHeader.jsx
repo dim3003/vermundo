@@ -1,8 +1,8 @@
-import "../style/Header.css";
+import "../style/HomeHeader.css";
 
-const Header = () => {
+const HomeHeader = () => {
 	return (
-		<div className="header">
+		<div className="home-header">
 			<div className="top-bar">
 				<div className="brand">VERMUNDO</div>
 			</div>
@@ -13,4 +13,4 @@ const Header = () => {
 	);
 };
 
-export default Header;
+export default HomeHeader;

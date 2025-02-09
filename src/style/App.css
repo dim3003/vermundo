@@ -1,23 +1,31 @@
 body {
 	font-family: "Arimo", sans-serif;
-	font-size: 10px;
+	font-size: 13px;
 	margin: 0;
 	padding: 0;
 }
 
 h1,
 h2,
+h3,
 h4,
 h5,
 h6 {
+	font-family: "Suez One", sans-serif;
 	font-weight: 700;
-	font-size: 1.6em;
+}
+
+h1{
+	font-size: 1.3rem;
+}
+
+h2{
+
+	font-size:1rem;
 }
 
 h3 {
 	font-size: 19px;
-	font-family: "Suez One", sans-serif;
-	font-weight: bold;
 }
 
 p,

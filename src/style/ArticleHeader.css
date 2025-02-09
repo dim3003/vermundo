@@ -1,0 +1,30 @@
+.article-header {
+	background-image: url("images/forestLaosBag.png");
+	height: 183px;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.top-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 18px 10px;
+}
+
+.brand {
+	font-size: 15px;
+	color: white;
+}
+
+@media (min-width: 1024px) {
+}
