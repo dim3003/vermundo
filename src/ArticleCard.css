@@ -1,6 +1,7 @@
 .article-card {
 	display: flex;
 	width: 300px;
+  height: 150px;
 	margin: 25px auto;
 	overflow: hidden;
 	border-top-right-radius: 20px;
@@ -17,13 +18,18 @@
 }
 
 .article-title {
-	font-size: 19px;
+	font-size: 14px;
 	font-family: "Suez One", sans-serif;
 }
 
 .article-text {
-	font-size: 10px;
-	text-align: justify;
+  font-size: 10px;
+  width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;     /* how many lines to show */
+  -webkit-box-orient: vertical;
 }
 
 .article-date {

@@ -1,8 +1,31 @@
+import {useState, useEffect} from 'react'
 import React from "react";
 import "./LastArticle.css";
 import ArticleCard from "./ArticleCard";
 
 const LastArticle = () => {
+	const [latestArticles, setLatestArticles] = useState([]);
+  
+ const fetchLatestArticles = () => {
+    fetch("https://localhost:7144/api/articles/latest")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setLatestArticles(data);
+      })
+      .catch((error) => {
+        console.error("Error fetching latest articles:", error);
+      });
+  };
+
+  useEffect(() => {
+    fetchLatestArticles()
+  }, []);
+
 	return (
 		<>
 			<div className="last-article-title-box">
@@ -11,24 +34,15 @@ const LastArticle = () => {
 				</div>
 			</div>
 			<div className="last-article-container">
-				<ArticleCard
-					title="Titre"
-					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae convallis ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae convallis ex."
-					date="Date de parution"
-					imageUrl="halongBay.jpeg"
-				/>
-				<ArticleCard
-					title="Titre"
-					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae convallis ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae convallis ex."
-					date="Date de parution"
-					imageUrl="halongBay.jpeg"
-				/>
-				<ArticleCard
-					title="Titre"
-					text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae convallis ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae convallis ex."
-					date="Date de parution"
-					imageUrl="halongBay.jpeg"
-				/>
+        {latestArticles.map((latestArticle) =>
+          <ArticleCard
+            key={latestArticle.id}
+            title={latestArticle.title}
+            text={latestArticle.bodyPreview}
+            date={latestArticle.createdAt}
+            imageUrl={latestArticle.imageUrl}
+          />
+        )}
 			</div>
 		</>
 	);
