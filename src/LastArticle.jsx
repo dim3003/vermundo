@@ -7,7 +7,7 @@ const LastArticle = () => {
 	const [latestArticles, setLatestArticles] = useState([]);
   
  const fetchLatestArticles = () => {
-    fetch("https://localhost:7144/api/articles/latest")
+    fetch("/api/articles/latest")
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
