@@ -65,3 +65,5 @@ node_modules/
 *.swp
 #Ignore vim backup files 
 *~
+#Ignore prod files
+/dist/*

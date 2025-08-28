@@ -1,4 +1,4 @@
-.about-container {
+.aboutContainer {
 	text-align: center;
 	margin: 63px 3em;
 	display: flex;
@@ -10,7 +10,7 @@
 	font-size: 18px;
 }
 
-.about-title-mobile {
+.aboutTitleMobile {
 	height: 39px;
 	width: 124px;
 	font-family: "Suez One", sans-serif;
@@ -18,29 +18,29 @@
 	margin: 10px 0;
 }
 
-.about-title-desktop {
+.aboutTitleDesktop {
 	display: none;
 }
 
-.about-image-block {
+.aboutImageBlock {
 	margin: 20px auto;
 }
 
-.about-image {
+.aboutImage {
 	object-fit: cover;
 	width: 218px;
 	height: 218px;
 	border-radius: 50%;
 }
 
-.instagram-section {
+.instagramSection {
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.3em;
 	font-family: "Suez One", sans-serif;
 	margin: 3em auto 1em;
 }
 
-.instagram-link {
+.instagramLink {
 	font-family: "Rubik", sans-serif;
 	color: black;
 	text-decoration: none;
@@ -50,11 +50,11 @@
 	align-items: center;
 }
 
-.instagram-link:hover {
+.instagramLink:hover {
 	color: grey;
 }
 
-.instagram-icon {
+.instagramIcon {
 	margin-top: 5px;
 	width: 25px;
 	height: 25px;
@@ -62,27 +62,29 @@
 }
 
 @media (min-width: 1024px) {
-	.about-container {
+	.aboutContainer {
 		position: relative;
 		height: 600px;
 	}
 
-	.about-description {
+	.aboutDescription {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		background-color: #ffe27c;
 		z-index: 1;
-		padding: 2em 4em;
-		width: 450px;
+		padding: 2em 2em;
+		width: 500px;
 		height: 400px;
 		position: absolute;
-		top: 15%;
+		top: 20%;
 		right: 40%;
 		transform: translateX(50%);
+    overflow: hidden;
+    text-align: left;
 	}
 
-	.about-image-block {
+	.aboutImageBlock {
 		z-index: -1;
 		position: absolute;
 		top: 0;
@@ -90,17 +92,17 @@
 		transform: translateX(50%);
 	}
 
-	.about-image {
+	.aboutImage {
 		border-radius: 0;
 		width: 540px;
 		height: 600px;
 	}
 
-	.about-title-mobile {
+	.aboutTitleMobile {
 		display: none;
 	}
 
-	.about-title-desktop {
+	.aboutTitleDesktop {
 		display: block;
 		height: 39px;
 		width: 124px;
@@ -109,7 +111,7 @@
 		margin: 10px 0;
 	}
 
-	.instagram-section {
-		margin: 5em auto;
+	.instagramSection {
+		margin: 5em auto 3em;
 	}
 }
