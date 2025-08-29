@@ -1,0 +1,15 @@
+.container{
+  padding: 0em 2em 1em;
+  min-height: 50vh;
+  text-align: justify;
+}
+
+.container > p {
+  margin-bottom: 1em;
+}
+
+@media (min-width: 1024px) {
+  .container{
+    padding: 0em 20em 1em;
+  }
+}

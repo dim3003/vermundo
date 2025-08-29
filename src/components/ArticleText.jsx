@@ -1,12 +1,16 @@
-import { text } from "@fortawesome/fontawesome-svg-core";
 import PropTypes from "prop-types";
+import styles from "./ArticleText.module.css";
 
 const ArticleText = ({ text }) => {
-	return (
-		<div className="article-text-container">
-      { text }
-		</div>
-	);
+  const paragraphs = text.split(/\n\s*\n/); 
+
+  return (
+    <div className={styles.container}>
+      {paragraphs.map((p, i) => (
+        <p key={i}>{p}</p>
+      ))}
+    </div>
+  );
 };
 
 ArticleText.propTypes = {
