@@ -32,6 +32,10 @@
   -webkit-box-orient: vertical;
 }
 
+a.articleCard:hover {
+  background-color: #f8f8f8;
+}
+
 .articleDate {
 	font-size: 11px;
 	color: #555;

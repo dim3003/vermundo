@@ -36,6 +36,7 @@ const LastArticle = () => {
         {latestArticles.map((latestArticle) =>
           <ArticleCard
             key={latestArticle.id}
+            guid={latestArticle.id}
             title={latestArticle.title}
             text={latestArticle.bodyPreview}
             date={latestArticle.createdAt}
