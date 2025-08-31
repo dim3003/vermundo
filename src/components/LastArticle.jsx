@@ -6,7 +6,7 @@ const LastArticle = () => {
 	const [latestArticles, setLatestArticles] = useState([]);
   
  const fetchLatestArticles = () => {
-    fetch("/api/articles/latest")
+    fetch(`${import.meta.env.VITE_API_URL}/api/articles/latest`)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);

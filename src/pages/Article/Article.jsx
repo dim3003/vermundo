@@ -12,7 +12,7 @@ const Article = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`/api/articles/${guid}`)
+    fetch(`${import.meta.env.VITE_API_URL}/api/articles/${guid}`)
         .then((response) => {
         console.log(response);
           if (!response.ok) {
