@@ -6,3 +6,9 @@
   text-align: center;
 	font-family: "Suez One", sans-serif;
 }
+
+@media(min-width: 1024px){
+  .title{
+    padding: 0.5em 7em 0em;
+  }
+}

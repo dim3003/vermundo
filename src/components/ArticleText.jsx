@@ -1,20 +1,20 @@
+import ReactMarkdown from "react-markdown";
 import PropTypes from "prop-types";
 import styles from "./ArticleText.module.css";
 
 const ArticleText = ({ text }) => {
-  const paragraphs = text.split(/\n\s*\n/); 
-
   return (
     <div className={styles.container}>
-      {paragraphs.map((p, i) => (
-        <p key={i}>{p}</p>
-      ))}
+      <ReactMarkdown>
+        {text}
+      </ReactMarkdown>
     </div>
   );
 };
 
 ArticleText.propTypes = {
-	text: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };
 
 export default ArticleText;
+

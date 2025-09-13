@@ -1,4 +1,11 @@
 .container{
   padding: 1em;
   height: 183px;
+  background-size: cover;
+}
+
+@media(min-width: 1024px){
+  .container{
+    height: 300px;
+  }
 }
