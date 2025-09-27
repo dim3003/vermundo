@@ -11,7 +11,7 @@
 .container > h2 {
   margin-bottom: 0.75em;
 	font-family: "Suez One", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-align: left;
 }
 
@@ -19,5 +19,9 @@
 @media (min-width: 1024px) {
   .container{
     padding: 0em 20em 1em;
+  }
+
+  .container > h2{
+    font-size: 1.5em;
   }
 }
