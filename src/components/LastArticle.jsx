@@ -29,7 +29,7 @@ const LastArticle = () => {
 		<>
 			<div className={styles.lastArticleTitleBox}>
 				<div className={styles.lastArticleTitle}>
-					Derniers Articles
+				  Voyager autrement
 				</div>
 			</div>
 			<div className={styles.lastArticleContainer}>

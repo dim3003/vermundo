@@ -18,20 +18,17 @@ const About = () => {
 					<div className={styles.aboutDescription}>
 						<div className={styles.aboutTitleDesktop}>À Propos</div>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Aliquam vitae convallis ex. Sed ut nulla id magna
-							consectetur tincidunt. Quisque rhoncus ipsum ut iaculis
-							iaculis. Nunc non vestibulum justo, in hendrerit tellus.
-							Vestibulum ac vulputate nulla. Duis id eros orci. Morbi
-							sem sapien, varius sit amet lorem tincidunt, pulvinar
-							viverra ex. Aliquam feugiat odio sem, non semper augue
-							malesuada cras.
+              Salut, je suis Maévane !
 						</p>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Aliquam vitae convallis ex. Sed ut nulla id magna
-							consectetur tincidunt.
-						</p>
+            <p>
+              Ayant exploré près de 25 pays, j’ai pu constater de mes propres yeux combien le tourisme peut transformer des paysages, et parfois bouleverser des cultures locales. Ces expériences m’ont poussée à réfléchir à la manière dont nous voyageons et à l’impact que nous laissons derrière nous.
+            </p>
+            <p>
+              Aujourd’hui, en parallèle de mon master en communication d’intérêt général, j’ai décidé de créer ce blog pour partager une autre manière de parcourir le monde : plus éthique, plus consciente, plus respectueuse. Ici, il ne s’agit pas de vous partager les plus belles destinations ou les must-do en voyage, mais plutôt de discuter d’une approche qui remet en question notre manière de voyager.
+            </p>
+            <p>
+              Explorer le monde, c’est apprendre dans le respect, prendre soin de soi et des autres, et surtout découvrir sans nuire. Bienvenue dans cette aventure où voyage rime avec responsabilité !
+            </p>
 					</div>
 				</div>
 			</div>

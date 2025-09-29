@@ -5,7 +5,7 @@ const HomeHeader = () => {
 	return (
 		<div className={headerStyles.header}>
 			<div className={logoStyles.logo}>VERMUNDO</div>
-			<div className={headerStyles.centralText}>PARTIR À L&apos;AVENTURE</div>
+			<div className={headerStyles.centralText}>VOYAGE RESPONSABLE</div>
 		</div>
 	);
 };

@@ -1,6 +1,6 @@
 :root {
   /* Fonts */
-  --font-sans: "Arimo", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --font-sans: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
   --font-display: "Suez One", Georgia, "Times New Roman", Times, serif;
 
   /* Colors (light default) */

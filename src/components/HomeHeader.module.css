@@ -11,17 +11,20 @@
 }
 
 .centralText {
-	font-size: 50px;
+	font-family: "Rubik", sans-serif;
+	font-size: 45px;
+  text-align: center;
+  font-weight: 900;
+	width: calc(100% - 10px);
+  letter-spacing: 0;
 	color: #f6d85f;
-	text-transform: uppercase;
-	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 	position: absolute;
 	top: 195px;
 	left: 50%;
 	transform: translateX(-50%);
-	font-family: "Suez One", serif;
-	width: calc(100% - 76px);
-	text-align: center;
+	text-transform: uppercase;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6); /* drop shadow propre */
+  overflow-wrap: break-word; 
 }
 
 .centralLink a {
