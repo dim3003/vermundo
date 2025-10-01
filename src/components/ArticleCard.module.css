@@ -17,9 +17,9 @@
 	justify-content: space-between;
 }
 
-.articleTitle {
-	font-size: 13px;
-	font-family: "Suez One", sans-serif;
+.articleTitle{
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
 }
 
 .articleText {
@@ -51,14 +51,13 @@ a.articleCard:hover {
 		border-radius: 0;
 	}
 
+  .articleTitle{
+    font-size: 1.1rem;
+  }
+
 	.articleImage {
 		width: 300px;
 	}
-
-  .articleTitle{
-    font-size: 15px;
-    margin-bottom: 1em;
-  }
 
   .articleText {
     display: block;

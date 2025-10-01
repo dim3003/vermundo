@@ -32,6 +32,10 @@
 	border-radius: 50%;
 }
 
+.aboutDescription > p{
+  margin-bottom: 0.5em;
+}
+
 .instagramSection {
 	text-align: center;
 	font-size: 1.3em;
@@ -76,7 +80,7 @@
 		width: 500px;
 		height: 520px;
 		position: absolute;
-		top: 12%;
+		top: 10%;
 		right: 40%;
 		transform: translateX(50%);
     overflow: hidden;
@@ -105,8 +109,6 @@
 		display: block;
 		height: 39px;
 		width: 124px;
-		font-family: "Suez One", sans-serif;
-		font-size: 1.5rem;
 		margin: 10px 0;
 	}
 

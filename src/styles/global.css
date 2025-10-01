@@ -27,8 +27,9 @@ body {
    Typography
 ---------------------------------*/
 h1 { font-size: var(--fs-1); line-height: 1.1; font-weight: 700; }
-h2, h4, h5, h6 { font-size: var(--fs-2); font-weight: 700; }
+h2  { font-size: var(--fs-2); font-weight: 500; }
 h3 { font-size: var(--fs-3); font-family: var(--font-display); font-weight: 700; }
+h4, h5, h6 { font-size: var(--fs-4); font-weight: 700; }
 
 p, li, button, input, textarea { font-weight: 400; }
 

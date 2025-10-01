@@ -28,9 +28,9 @@ const LastArticle = () => {
 	return (
 		<>
 			<div className={styles.lastArticleTitleBox}>
-				<div className={styles.lastArticleTitle}>
+				<h2 className={styles.lastArticleTitle}>
 				  Voyager autrement
-				</div>
+				</h2>
 			</div>
 			<div className={styles.lastArticleContainer}>
         {latestArticles.map((latestArticle) =>

@@ -16,7 +16,7 @@ const About = () => {
 					</div>
 
 					<div className={styles.aboutDescription}>
-						<div className={styles.aboutTitleDesktop}>À Propos</div>
+						<h2 className={styles.aboutTitleDesktop}>À Propos</h2>
 						<p>
               Salut, je suis Maévane !
 						</p>
@@ -26,15 +26,12 @@ const About = () => {
             <p>
               Aujourd’hui, en parallèle de mon master en communication d’intérêt général, j’ai décidé de créer ce blog pour partager une autre manière de parcourir le monde : plus éthique, plus consciente, plus respectueuse. Ici, il ne s’agit pas de vous partager les plus belles destinations ou les must-do en voyage, mais plutôt de discuter d’une approche qui remet en question notre manière de voyager.
             </p>
-            <p>
-              Explorer le monde, c’est apprendre dans le respect, prendre soin de soi et des autres, et surtout découvrir sans nuire. Bienvenue dans cette aventure où voyage rime avec responsabilité !
-            </p>
 					</div>
 				</div>
 			</div>
 
 			<div className={styles.instagramSection}>
-				<p>Retrouve-nous sur Instagram !</p>
+				<h2>Retrouve-nous sur Instagram !</h2>
 				<a
 					href="https://www.instagram.com/vermundo_ch"
 					target="_blank"

@@ -15,7 +15,7 @@ const ArticleCard = ({ guid, title, text, date, imageUrl }) => {
     <Link to={`articles/${guid}`} className={styles.articleCard}>
       <img src={imageUrl} alt="Article preview image" className={styles.articleImage} />
       <div className={styles.articleContent}>
-        <div className={styles.articleTitle}>{title}</div>
+        <h3 className={styles.articleTitle}>{title}</h3>
         <p className={styles.articleText}>{text}</p>
         <div className={styles.articleDate}>{formatDate(date)}</div>
       </div>

@@ -1,7 +1,7 @@
 :root {
   /* Fonts */
   --font-sans: Poppins, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  --font-display: "Suez One", Georgia, "Times New Roman", Times, serif;
+  --font-display: Poppins, Georgia, "Times New Roman", Times, serif;
 
   /* Colors (light default) */
   --bg: #ffffff;
@@ -12,9 +12,9 @@
 
   /* Typography scale */
   --fs-1: clamp(2rem, 2vw + 1rem, 3.2rem); /* h1 */
-  --fs-2: 1.6rem;  /* h2/h4/h5/h6 */
-  --fs-3: 1.1875rem; /* ~19px for h3 */
-  --fs-base: 1rem;  /* 16px base */
+  --fs-2: 1.3rem;
+  --fs-3: 1.1rem; 
+  --fs-base: 1rem; 
   --lh-base: 1.5;
 
   /* Misc */
