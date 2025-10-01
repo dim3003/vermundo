@@ -32,6 +32,7 @@ h3 { font-size: var(--fs-3); font-family: var(--font-display); font-weight: 700;
 h4, h5, h6 { font-size: var(--fs-4); font-weight: 700; }
 
 p, li, button, input, textarea { font-weight: 400; }
+p { margin-bottom: 0.5em; }
 
 /* ------------------------------
    Links
