@@ -4,7 +4,7 @@ const About = () => {
 	return (
 		<>
 			<div className={styles.aboutContainer}>
-				<div className={styles.aboutTitleMobile}>À propos</div>
+				<h2 className={styles.aboutTitleMobile}>À Propos</h2>
 
 				<div className={styles.aboutContent}>
 					<div className={styles.aboutImageBlock}>

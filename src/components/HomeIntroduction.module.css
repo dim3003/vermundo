@@ -1,0 +1,41 @@
+.homeIntroTitleBox{
+  position: relative;
+  margin: -40px auto 0 auto;
+  padding: 0.4em 1em;
+	width: 220px;
+	height: 78px;
+	background-color: #f6d85f;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+  z-index: 10;
+}
+
+.homeIntroTitle{
+  text-align: center;
+	width: 100%;
+}
+
+.homeIntroText{
+  padding: 2em;
+}
+
+@media(min-width: 1024px){
+	.homeIntroTitleBox{
+		width: 300px;
+		height: 102px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	}
+  
+  .homeIntroText{
+    padding: 3em 15em;
+  }
+}
+
+@media(min-width: 1360px){
+  .homeIntroText{
+    padding: 3em 25em;
+  }
+}
+

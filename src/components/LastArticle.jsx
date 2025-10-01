@@ -27,11 +27,9 @@ const LastArticle = () => {
 
 	return (
 		<>
-			<div className={styles.lastArticleTitleBox}>
-				<h2 className={styles.lastArticleTitle}>
-				  Voyager autrement
-				</h2>
-			</div>
+      <h2 className={styles.lastArticleTitle}>
+        Derniers Articles
+      </h2>
 			<div className={styles.lastArticleContainer}>
         {latestArticles.map((latestArticle) =>
           <ArticleCard

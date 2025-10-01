@@ -9,14 +9,6 @@
 	font-size: 15px;
 }
 
-.aboutTitleMobile {
-	height: 39px;
-	width: 124px;
-	font-family: "Suez One", sans-serif;
-	font-size: 1.5rem;
-	margin: 10px 0;
-}
-
 .aboutTitleDesktop {
 	display: none;
 }
@@ -30,10 +22,6 @@
 	width: 218px;
 	height: 218px;
 	border-radius: 50%;
-}
-
-.aboutDescription > p{
-  margin-bottom: 0.5em;
 }
 
 .instagramSection {
