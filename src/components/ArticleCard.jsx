@@ -1,3 +1,4 @@
+import ReactMarkdown from "react-markdown";
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import styles from './ArticleCard.module.css';
@@ -16,7 +17,11 @@ const ArticleCard = ({ guid, title, text, date, imageUrl }) => {
       <img src={imageUrl} alt="Article preview image" className={styles.articleImage} />
       <div className={styles.articleContent}>
         <h3 className={styles.articleTitle}>{title}</h3>
-        <p className={styles.articleText}>{text}</p>
+        <p className={styles.articleText}>
+          <ReactMarkdown>
+            {text}
+          </ReactMarkdown>
+        </p>
         <div className={styles.articleDate}>{formatDate(date)}</div>
       </div>
     </Link>
