@@ -63,6 +63,7 @@ a.articleCard:hover {
     display: block;
     width: auto;
     font-size: 14px;
+    font-style: italic;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
