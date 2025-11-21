@@ -38,6 +38,7 @@ a.articleCard:hover {
 
 .articleImage {
 	width: 130px;
+  height: 150px;
 	object-fit: cover;
 }
 

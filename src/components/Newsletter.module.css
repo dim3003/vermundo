@@ -1,0 +1,91 @@
+.newsletterWrapper {
+  background-color: #ffe27c;
+  background-image: url("/images/fruits.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.form {
+  background-color: #FFE27C;
+  padding: 1rem 1.2rem;
+  border-radius: 1rem;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight:bold;
+}
+
+.inputRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.emailInput,
+.submitBtn {
+  box-sizing: border-box;
+  font-size: 1rem;
+  line-height: 1;      
+}
+
+.emailInput {
+  padding: 0.75rem 1rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.submitBtn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;     
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.submitBtn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  margin-top: 1rem;
+}
+
+.success {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .form{
+    padding: 1.5rem;
+  }
+
+  .inputRow {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .emailInput {
+    margin-bottom: 0;
+    flex: 1;            
+  }
+
+  .submitBtn {
+    margin-left: 0.5rem;
+    white-space: nowrap;  
+  }
+}

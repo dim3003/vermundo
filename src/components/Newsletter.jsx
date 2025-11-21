@@ -1,40 +1,69 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
+import styles from "./Newsletter.module.css";
 
 export default function Newsletter() {
-  const containerRef = useRef(null);
-  const [htmlContent, setHtmlContent] = useState("");
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(null);
 
-  useEffect(() => {
-    fetch("/newsletter.html")
-      .then((res) => res.text())
-      .then((html) => setHtmlContent(html));
-  }, []);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError(null);
 
-  useEffect(() => {
-    if (!htmlContent || !containerRef.current) return;
+    try {
+      const res = await fetch("/api/newsletter/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
 
-    const container = containerRef.current;
-
-    const scripts = container.querySelectorAll("script");
-    scripts.forEach((oldScript) => {
-      const newScript = document.createElement("script");
-      if (oldScript.src) {
-        newScript.src = oldScript.src;
-        newScript.async = oldScript.async;
-        newScript.defer = oldScript.defer;
-        newScript.type = oldScript.type || "text/javascript";
-      } else {
-        newScript.textContent = oldScript.textContent;
+      if (!res.ok) {
+        throw new Error("Erreur lors de l'inscription.");
       }
-      oldScript.parentNode.replaceChild(newScript, oldScript);
-    });
-  }, [htmlContent]);
+
+      setSuccess(true);
+    } catch (err) {
+      console.error(err);
+      setError("Impossible d’envoyer votre email. Veuillez vérifier votre boîte mail.");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
-    <div
-      ref={containerRef}
-      dangerouslySetInnerHTML={{ __html: htmlContent }}
-    />
+    <section className={styles.newsletterWrapper}>
+      <form onSubmit={handleSubmit} className={styles.form}>
+        <h2 className={styles.title}>Reste informé·e !</h2>
+
+        {!success ? (
+          <>
+            <label htmlFor="email">Entre ton email ici :</label>
+            <div className={styles.inputRow}>
+              <input
+                id="email"
+                type="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className={styles.emailInput}
+              />
+
+              <button type="submit" disabled={loading} className={styles.submitBtn}>
+                {loading ? "Envoi..." : "Envoyer"}
+              </button>
+            </div>
+
+            {error && <p className={styles.error}>{error}</p>}
+          </>
+        ) : (
+          <div className={styles.success}>
+            <h4>Merci pour ton inscription 🎉</h4>
+            <p>Vérifie ta boîte mail pour confirmer ton adresse.</p>
+          </div>
+        )}
+      </form>
+    </section>
   );
 }
-
